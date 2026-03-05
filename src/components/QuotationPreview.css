@@ -161,3 +161,45 @@
 }
 .preview-footer-divider { height: 3px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); margin-bottom: 1rem; }
 .footer-generated { font-size: 0.6875rem; opacity: 0.5; margin-top: 0.25rem; }
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+  .preview-header {
+    padding: 1.5rem 1.25rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .preview-header-right { text-align: left; }
+  .preview-bill-section { padding: 1.25rem; }
+  .preview-section { padding: 1rem 1.25rem; }
+  .preview-footer { padding: 1rem 1.25rem; }
+  .preview-totals { padding: 1.25rem; }
+  .meta-item { padding: 0.75rem 1rem; }
+  .preview-meta-bar { flex-wrap: wrap; }
+  .meta-item { flex: 1 1 50%; }
+  .meta-item:nth-child(2) { border-right: none; }
+  .preview-bank .bank-grid { grid-template-columns: 1fr; }
+  .preview-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .totals-table { min-width: 0; width: 100%; }
+  .preview-totals { justify-content: stretch; }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .preview-header {
+    padding: 1rem 1rem 0.75rem;
+  }
+  .preview-company-initial { width: 50px; height: 50px; font-size: 1.5rem; }
+  .preview-logo { height: 50px; max-width: 100px; }
+  .preview-company-name { font-size: 1rem; }
+  .preview-bill-section { padding: 1rem; }
+  .preview-section { padding: 0.875rem 1rem; }
+  .preview-footer { padding: 0.875rem 1rem; }
+  .preview-totals { padding: 1rem; }
+  .meta-item { flex: 1 1 100%; border-right: none; }
+  .meta-item:nth-child(2) { border-top: 1px solid var(--border); }
+  .quotation-number { font-size: 1.125rem; }
+  .grand-total-amount { font-size: 1rem; }
+}
+

@@ -25,9 +25,9 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
             <span>Total</span>
             <span></span>
           </div>
-          {items.map((item, idx) => (
+            {items.map((item, idx) => (
             <div key={item.id} className={`table-row ${idx % 2 === 1 ? 'alt-row' : ''}`}>
-              <div className="cell-desc">
+              <div className="cell-desc" data-label="Description">
                 <input
                   type="text"
                   value={item.description}
@@ -35,7 +35,7 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
                   placeholder="Item description..."
                 />
               </div>
-              <div className="cell-qty">
+              <div className="cell-qty" data-label="Qty">
                 <input
                   type="number"
                   min="0"
@@ -43,7 +43,7 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
                   onChange={e => onUpdate(item.id, 'quantity', e.target.value)}
                 />
               </div>
-              <div className="cell-price">
+              <div className="cell-price" data-label="Unit Price">
                 <input
                   type="number"
                   min="0"
@@ -52,7 +52,7 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
                   onChange={e => onUpdate(item.id, 'unitPrice', e.target.value)}
                 />
               </div>
-              <div className="cell-tax">
+              <div className="cell-tax" data-label="Tax %">
                 <input
                   type="number"
                   min="0"
@@ -62,7 +62,7 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
                   onChange={e => onUpdate(item.id, 'taxRate', e.target.value)}
                 />
               </div>
-              <div className="cell-discount">
+              <div className="cell-discount" data-label="Discount">
                 <div className="discount-input">
                   <input
                     type="number"
@@ -81,7 +81,7 @@ export default function LineItems({ items, currency, onAdd, onUpdate, onRemove }
                   </select>
                 </div>
               </div>
-              <div className="cell-total">
+              <div className="cell-total" data-label="Total">
                 {formatCurrency(calculateLineTotal(item), currencySymbol)}
               </div>
               <div className="cell-action">

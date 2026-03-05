@@ -36,5 +36,13 @@
   font-size: 0.8125rem;
   font-weight: 500;
   margin-left: auto;
+  min-height: 44px;
 }
 .logo-remove:hover { opacity: 0.85; }
+@media (max-width: 480px) {
+  .logo-preview {
+    flex-wrap: wrap;
+  }
+  .logo-preview img { max-width: 150px; }
+  .logo-remove { margin-left: 0; width: 100%; justify-content: center; }
+}

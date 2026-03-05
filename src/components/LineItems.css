@@ -1,0 +1,60 @@
+.line-items-body { padding: 0; }
+.line-items-table { width: 100%; overflow-x: auto; }
+.table-header {
+  display: grid;
+  grid-template-columns: 3fr 0.7fr 1.2fr 0.7fr 1.2fr 1.2fr 0.5fr;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  min-width: 700px;
+}
+.table-row {
+  display: grid;
+  grid-template-columns: 3fr 0.7fr 1.2fr 0.7fr 1.2fr 1.2fr 0.5fr;
+  gap: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  min-width: 700px;
+}
+.table-row.alt-row { background: var(--bg-secondary); }
+.table-row input, .table-row select {
+  padding: 0.5rem 0.625rem;
+  font-size: 0.8125rem;
+  border-radius: 6px;
+}
+.cell-total {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.875rem;
+}
+.discount-input { display: flex; gap: 0.25rem; }
+.discount-input input { flex: 1; min-width: 0; }
+.discount-type { width: 70px !important; flex-shrink: 0; }
+.delete-row-btn {
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+}
+.delete-row-btn:hover { background: #fee2e2; color: var(--danger); }
+.add-item-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 1.5rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.add-item-btn:hover { background: var(--primary-light); }

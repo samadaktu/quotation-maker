@@ -1,0 +1,30 @@
+.quotation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+}
+.form-actions {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.pdf-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.875rem 2.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  box-shadow: 0 4px 12px rgba(26,43,95,0.3);
+  transition: var(--transition);
+}
+.pdf-download-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26,43,95,0.4);
+}
+.pdf-download-btn:disabled { opacity: 0.7; cursor: not-allowed; }

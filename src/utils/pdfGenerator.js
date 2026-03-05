@@ -55,6 +55,6 @@ export async function generatePDF(previewElementId = 'quotation-preview') {
     pdf.save('quotation.pdf');
   } catch (error) {
     console.error('PDF generation error:', error);
-    alert('Failed to generate PDF. Please try again.');
+    alert(`Failed to generate PDF: ${error.message || 'Unknown error'}. Please try again.`);
   }
 }

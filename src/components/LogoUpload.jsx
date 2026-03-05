@@ -7,7 +7,11 @@ export default function LogoUpload({ logo, onChange }) {
   const [dragging, setDragging] = useState(false);
 
   const handleFile = (file) => {
-    if (!file || !file.type.startsWith('image/')) return;
+    if (!file) return;
+    if (!file.type.startsWith('image/')) {
+      alert('Please upload an image file (PNG, JPG, or SVG).');
+      return;
+    }
     const reader = new FileReader();
     reader.onload = (e) => onChange(e.target.result);
     reader.readAsDataURL(file);

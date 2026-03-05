@@ -2,8 +2,9 @@ import { useState, useCallback } from 'react';
 import { generateQuotationNumber } from '../utils/formatters';
 import { defaultTerms, defaultNotes } from '../data/defaultTerms';
 
+const VALIDITY_DAYS = 30;
 const today = new Date().toISOString().split('T')[0];
-const validUntil = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+const validUntil = new Date(Date.now() + VALIDITY_DAYS * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
 const defaultState = {
   company: {

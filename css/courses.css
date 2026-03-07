@@ -1,0 +1,190 @@
+/* ILM SEEKER - Courses Page Styles */
+
+/* ========== COURSES HEADER ========== */
+.courses-header {
+  position: relative;
+  background-color: var(--white);
+  padding: 80px 0 40px;
+  overflow: hidden;
+}
+
+.courses-header h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.courses-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.filter-pill {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 1px solid #E5E7EB;
+  background: var(--white);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-pill:hover {
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+}
+
+.filter-pill.active {
+  background: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+}
+
+/* Courses Header Decorative Blobs */
+.courses-blob-1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 5%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.courses-blob-2 {
+  width: 80px;
+  height: 80px;
+  top: 15%;
+  right: 10%;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.courses-blob-3 {
+  width: 90px;
+  height: 90px;
+  bottom: 10%;
+  right: 20%;
+  border-radius: 50% 40% 60% 50%;
+}
+
+.courses-blob-4 {
+  width: 70px;
+  height: 70px;
+  bottom: 15%;
+  right: 5%;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+/* ========== COURSES GRID ========== */
+.courses-grid {
+  margin-bottom: 60px;
+}
+
+/* ========== PAGINATION ========== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.pagination-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: var(--border-light);
+  background: var(--white);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover {
+  background: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+  transform: scale(1.05);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-btn:disabled:hover {
+  background: var(--white);
+  color: var(--text-primary);
+  border-color: #E5E7EB;
+  transform: scale(1);
+}
+
+.page-number {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .courses-header h1 {
+    font-size: 40px;
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .filter-tabs::-webkit-scrollbar-track {
+    background: #F7F8F6;
+  }
+
+  .filter-tabs::-webkit-scrollbar-thumb {
+    background: var(--primary-green);
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-header h1 {
+    font-size: 32px;
+  }
+
+  .courses-subtitle {
+    font-size: 16px;
+  }
+
+  .filter-pill {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-header h1 {
+    font-size: 28px;
+  }
+
+  .courses-header {
+    padding: 60px 0 30px;
+  }
+}

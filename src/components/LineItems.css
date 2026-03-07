@@ -58,3 +58,38 @@
   font-weight: 600;
 }
 .add-item-btn:hover { background: var(--primary-light); }
+
+/* Mobile card layout */
+@media (max-width: 768px) {
+  .line-items-table { overflow-x: visible; }
+  .table-header { display: none; }
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    margin: 0.5rem 1rem;
+  }
+  .table-row.alt-row { background: var(--bg-secondary); }
+  .table-row [data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+  }
+  .cell-total {
+    font-size: 1rem;
+  }
+  .cell-action { display: flex; justify-content: flex-end; }
+  .delete-row-btn { width: 44px; height: 44px; }
+  .discount-type { width: auto !important; }
+  .add-item-btn { margin: 0.75rem 1rem; }
+}
+

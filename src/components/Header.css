@@ -34,6 +34,13 @@
   font-weight: 500;
   color: rgba(255,255,255,0.7);
   background: transparent;
+  min-height: 44px;
 }
 .toggle-btn.active { background: white; color: var(--primary); }
 @media (max-width: 1024px) { .header-toggle { display: flex; } }
+@media (max-width: 480px) {
+  .header { padding: 0 1rem; }
+  .header-title { font-size: 1rem; }
+  .header-subtitle { display: none; }
+  .toggle-btn { padding: 0.375rem 0.75rem; font-size: 0.8125rem; }
+}

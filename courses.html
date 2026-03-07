@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Courses - ILM SEEKER</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <img src="https://placehold.co/150x50/1A6B45/FFFFFF?text=ILM+SEEKER" alt="ILM SEEKER Logo" class="navbar-logo">
+
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="courses.html" class="dropdown-toggle active">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="courses.html?filter=quran">Quranic Adventures</a></li>
+            <li><a href="courses.html?filter=arabic">Learning Arabic</a></li>
+            <li><a href="courses.html?filter=islamic-science">Islamic Science</a></li>
+            <li><a href="courses.html?filter=prophets">Life of Prophets</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Store</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="components.html">Components</a></li>
+      </ul>
+
+      <div class="navbar-right">
+        <div class="navbar-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="cart-badge">3</span>
+        </div>
+        <button class="btn btn-primary navbar-cta">Create an account</button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Courses Header -->
+  <section class="courses-header">
+    <div class="container">
+      <h1 class="text-center fade-in-up">Our Courses</h1>
+      <p class="text-center text-muted courses-subtitle fade-in-up">You can start learning these courses and get certified within days</p>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-pill active" data-filter="all">All Courses</button>
+        <button class="filter-pill" data-filter="arabic">Learning Arabic</button>
+        <button class="filter-pill" data-filter="science">Islamic Science</button>
+        <button class="filter-pill" data-filter="quran">Quranic Adventures</button>
+        <button class="filter-pill" data-filter="prophets">Life of Prophets</button>
+        <button class="filter-pill" data-filter="history">Islamic History</button>
+      </div>
+    </div>
+
+    <!-- Decorative blobs -->
+    <div class="blob blob-orange courses-blob-1"></div>
+    <div class="blob blob-pink courses-blob-2"></div>
+    <div class="blob blob-blue courses-blob-3"></div>
+    <div class="blob blob-yellow courses-blob-4"></div>
+  </section>
+
+  <!-- Courses Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3 courses-grid">
+        <!-- Course 1 -->
+        <div class="card course-card" data-category="quran">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Quran+Recitation" alt="Quran Recitation">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Quran Recitation with Tajweed</h3>
+            <p class="text-muted">Master the art of Quranic recitation with proper Tajweed rules and beautiful pronunciation.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="card course-card" data-category="arabic">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Learning+Arabic" alt="Learning Arabic">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Learning Arabic for Beginners</h3>
+            <p class="text-muted">Start your journey in understanding the beautiful Arabic language from basics to fluency.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="card course-card" data-category="prophets">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Life+of+Prophets" alt="Life of Prophets">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Life of Prophets</h3>
+            <p class="text-muted">Learn about the inspiring lives of Islamic prophets and their timeless lessons for humanity.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="card course-card" data-category="history">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Islamic+History" alt="Islamic History">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Islamic History for Children</h3>
+            <p class="text-muted">Discover the rich history of Islam through engaging stories and historical accounts.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="card course-card" data-category="science">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Islamic+Science" alt="Islamic Science">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Islamic Science & Nature</h3>
+            <p class="text-muted">Explore the wonders of creation and Islamic contributions to science and knowledge.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="card course-card" data-category="quran">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Islamic+Stories" alt="Islamic Stories">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Islamic Stories for Children</h3>
+            <p class="text-muted">Engaging stories from Islamic history that inspire and teach valuable life lessons.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="card course-card" data-category="arabic">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Arabic+Writing" alt="Arabic Writing">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Arabic Writing & Reading</h3>
+            <p class="text-muted">Learn to read and write Arabic with proper grammar and beautiful calligraphy.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="card course-card" data-category="history">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Islamic+Ethics" alt="Islamic Ethics">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Islamic Ethics & Character</h3>
+            <p class="text-muted">Build strong moral character based on Islamic teachings and prophetic traditions.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 9 -->
+        <div class="card course-card" data-category="quran">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Quran+Memorization" alt="Quran Memorization">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Quran Memorization (Hifz)</h3>
+            <p class="text-muted">Comprehensive program for memorizing the Holy Quran with understanding and proper recitation.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">📅 Age</span>
+                <span class="course-info-value">3-5 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">🕐 Time</span>
+                <span class="course-info-value">8-10 PM</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">👥 Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="pagination-btn pagination-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <span class="page-number">1/15</span>
+        <button class="pagination-btn pagination-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <img src="https://placehold.co/150x50/FFFFFF/1A6B45?text=ILM+SEEKER" alt="ILM SEEKER" class="footer-logo">
+          <p class="footer-description">ILM SEEKER is dedicated to providing quality Islamic education for children, nurturing their spiritual growth and academic excellence.</p>
+          <div class="footer-socials">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Ilm School</a></li>
+            <li><a href="#">About Ilm School</a></li>
+            <li><a href="#">Ilm Store</a></li>
+            <li><a href="#">Ilm Daycare</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get Help</h4>
+          <ul class="footer-links">
+            <li><a href="#">Support Careers</a></li>
+            <li><a href="#">24/7 Service</a></li>
+            <li><a href="#">Quick Chat</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Subscribe News</h4>
+          <div class="footer-subscribe">
+            <input type="email" placeholder="Your email">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+          <div class="footer-contact">
+            <p>📧 info@ilmseeker.com</p>
+            <p>📞 +1 (555) 123-4567</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>©IlmSeeker</span>
+          <span>|</span>
+          <span>Powered by Islamic Education Team</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

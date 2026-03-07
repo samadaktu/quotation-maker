@@ -1,0 +1,592 @@
+/* ILM SEEKER - Home Page Styles */
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-hover);
+  overflow: hidden;
+  transform: rotate(2deg);
+  transition: transform 0.3s ease;
+  max-width: 350px;
+}
+
+.hero-card:hover {
+  transform: rotate(0deg) translateY(-8px);
+}
+
+.hero-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-card-content {
+  padding: 20px;
+}
+
+.hero-card-content h4 {
+  margin-bottom: 12px;
+}
+
+.hero-card-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.hero-avatars {
+  display: flex;
+  margin-left: -8px;
+}
+
+.hero-avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin-left: -8px;
+}
+
+.hero-stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.hero-stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.hero-socials {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--light-gray-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.social-circle:hover {
+  background: var(--primary-green);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* Hero Decorative Blobs */
+.hero-blob-1 {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 5%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.hero-blob-2 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  right: 15%;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.hero-blob-3 {
+  width: 60px;
+  height: 60px;
+  bottom: 30%;
+  left: 10%;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.hero-blob-4 {
+  width: 90px;
+  height: 90px;
+  bottom: 15%;
+  right: 20%;
+  border-radius: 50% 40% 60% 50%;
+}
+
+.hero-blob-5 {
+  width: 70px;
+  height: 70px;
+  top: 40%;
+  right: 5%;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+/* ========== GOALS SECTION ========== */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.goal-tag {
+  background: var(--white);
+  border: var(--border-light);
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.goal-tag:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.goal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* ========== COURSES SECTION ========== */
+.course-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+
+.course-price-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.course-card-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card-content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.course-card-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.course-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: var(--border-light);
+}
+
+.course-info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.course-info-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.course-info-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.course-card-featured {
+  border: 2px solid var(--primary-green);
+}
+
+.course-card-featured .btn-outline {
+  background: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+}
+
+/* ========== RESOURCES SECTION ========== */
+.resources-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.resources-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.resource-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.feature-check {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.resources-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+}
+
+/* ========== TEACHERS SECTION ========== */
+.teachers-grid {
+  gap: 32px;
+}
+
+.teacher-card {
+  text-align: center;
+}
+
+.teacher-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px dashed var(--primary-green);
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.teacher-card h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.teacher-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ========== ARTICLES SECTION ========== */
+.articles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+.article-card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: all 0.25s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.article-featured .article-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 24px;
+}
+
+.article-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.article-date {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.article-featured h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-small {
+  display: flex;
+  gap: 16px;
+  background: var(--white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  padding: 16px;
+  transition: all 0.25s ease;
+}
+
+.article-small:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.article-small img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.article-small-content {
+  flex: 1;
+}
+
+.article-small h4 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+}
+
+.contact-info {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.contact-decoration {
+  margin-top: 40px;
+}
+
+.rainbow-arc {
+  width: 200px;
+  height: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 44px;
+  }
+
+  .hero-right {
+    align-items: center;
+  }
+
+  .hero-socials {
+    position: static;
+    flex-direction: row;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .goals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resources-content {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-features {
+    grid-template-columns: 1fr;
+  }
+
+  .teachers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .articles-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teachers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-info {
+    grid-template-columns: 1fr;
+  }
+}

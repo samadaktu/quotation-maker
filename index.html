@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILM SEEKER - Where Knowledge Lights the Path</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <img src="https://placehold.co/150x50/1A6B45/FFFFFF?text=ILM+SEEKER" alt="ILM SEEKER Logo" class="navbar-logo">
+
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="courses.html" class="dropdown-toggle">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="courses.html?filter=quran">Quranic Adventures</a></li>
+            <li><a href="courses.html?filter=arabic">Learning Arabic</a></li>
+            <li><a href="courses.html?filter=islamic-science">Islamic Science</a></li>
+            <li><a href="courses.html?filter=prophets">Life of Prophets</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Store</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="components.html">Components</a></li>
+      </ul>
+
+      <div class="navbar-right">
+        <div class="navbar-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="cart-badge">3</span>
+        </div>
+        <button class="btn btn-primary navbar-cta">Create an account</button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1 class="fade-in-up">Where Knowledge Lights the Path</h1>
+          <p class="hero-subtitle fade-in-up">Empowering the next generation of Muslim learners with quality Islamic education, combining tradition with modern teaching methods for children ages 3-16.</p>
+          <div class="hero-buttons fade-in-up">
+            <button class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase
+            </button>
+            <button class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Watch Video
+            </button>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-card">
+            <img src="https://placehold.co/300x180/1A6B45/FFFFFF?text=Quran+Course" alt="Course preview" class="hero-card-img">
+            <div class="hero-card-content">
+              <h4>Quranic Adventures</h4>
+              <div class="hero-card-info">
+                <span>📅 Age: 5-8</span>
+                <span>🕐 6 months</span>
+                <span>👥 30 seats</span>
+              </div>
+              <button class="btn btn-primary btn-full">Purchase Course</button>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-avatars">
+              <img src="https://placehold.co/40x40/F4A261/FFFFFF?text=S" alt="Student">
+              <img src="https://placehold.co/40x40/93C5FD/FFFFFF?text=A" alt="Student">
+              <img src="https://placehold.co/40x40/F4A0B5/FFFFFF?text=M" alt="Student">
+              <img src="https://placehold.co/40x40/C4B5FD/FFFFFF?text=H" alt="Student">
+            </div>
+            <div>
+              <div class="hero-stat-number">2,500+</div>
+              <div class="hero-stat-label">Happy Students</div>
+            </div>
+          </div>
+          <div class="hero-socials">
+            <a href="#" class="social-circle">f</a>
+            <a href="#" class="social-circle">in</a>
+            <a href="#" class="social-circle">tw</a>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative blobs -->
+      <div class="blob blob-orange hero-blob-1"></div>
+      <div class="blob blob-pink hero-blob-2"></div>
+      <div class="blob blob-blue hero-blob-3"></div>
+      <div class="blob blob-lavender hero-blob-4"></div>
+      <div class="blob blob-yellow hero-blob-5"></div>
+    </div>
+  </section>
+
+  <!-- Set Career Goals Section -->
+  <section class="section goals-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Set career goals</h2>
+      <div class="goals-grid">
+        <div class="goal-tag"><span class="goal-dot" style="background: #F59E0B;"></span> Quranic Adventures</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #10B981;"></span> Islamic Stories</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #3B82F6;"></span> Young Explorers of Islam</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #8B5CF6;"></span> Learning Arabic</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #EF4444;"></span> Islamic Etiquette</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #F59E0B;"></span> Islamic Science</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #06B6D4;"></span> Life of Prophets</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #EC4899;"></span> Islamic History</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #10B981;"></span> Growing in Islam</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #8B5CF6;"></span> Foundations in Islam</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #F59E0B;"></span> Islamic Values Voyage</div>
+        <div class="goal-tag"><span class="goal-dot" style="background: #3B82F6;"></span> Ramadan Rookies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="section section-alt courses-section">
+    <div class="container">
+      <h2 class="text-center mb-2">Courses of ILM SEEKER</h2>
+      <p class="text-center text-muted mb-4">Discover our comprehensive range of Islamic education courses designed for children</p>
+
+      <div class="grid grid-3">
+        <!-- Course Card 1 -->
+        <div class="card course-card">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Quran+Recitation" alt="Quran Recitation">
+            <span class="course-price-badge">$50</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Quran Recitation with Tajweed</h3>
+            <p class="text-muted">Master the art of Quranic recitation with proper Tajweed rules and beautiful pronunciation.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">Age</span>
+                <span class="course-info-value">5-16 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Time</span>
+                <span class="course-info-value">6 Months</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Capacity</span>
+                <span class="course-info-value">30 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 2 (Featured) -->
+        <div class="card course-card course-card-featured">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Learning+Arabic" alt="Learning Arabic">
+            <span class="course-price-badge">$60</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Learning Arabic for Beginners</h3>
+            <p class="text-muted">Start your journey in understanding the beautiful Arabic language from basics to fluency.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">Age</span>
+                <span class="course-info-value">7-14 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Time</span>
+                <span class="course-info-value">8 Months</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Capacity</span>
+                <span class="course-info-value">25 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 3 -->
+        <div class="card course-card">
+          <div class="course-card-image">
+            <img src="https://placehold.co/400x240/1A6B45/FFFFFF?text=Islamic+Stories" alt="Islamic Stories">
+            <span class="course-price-badge">$45</span>
+          </div>
+          <div class="course-card-content">
+            <h3>Islamic Stories for Children</h3>
+            <p class="text-muted">Engaging stories from Islamic history that inspire and teach valuable life lessons.</p>
+            <div class="course-info">
+              <div class="course-info-item">
+                <span class="course-info-label">Age</span>
+                <span class="course-info-value">3-10 Years</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Time</span>
+                <span class="course-info-value">4 Months</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-label">Capacity</span>
+                <span class="course-info-value">40 Kids</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Purchase Course
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button class="btn btn-primary">Explore All Courses</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Learning Resources Section -->
+  <section class="section resources-section">
+    <div class="container">
+      <div class="resources-content">
+        <div class="resources-left">
+          <h2 class="mb-3">Free Learning Resources</h2>
+          <p class="text-muted mb-4">At ILM SEEKER, we believe every child deserves access to quality Islamic education. Our platform offers comprehensive resources designed by experienced Islamic educators.</p>
+
+          <div class="resources-features">
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Experience Teachers</span>
+            </div>
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Time Flexible</span>
+            </div>
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Quality Full Video</span>
+            </div>
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Focus on Quality</span>
+            </div>
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Children Development</span>
+            </div>
+            <div class="resource-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="feature-check">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Certification</span>
+            </div>
+          </div>
+        </div>
+        <div class="resources-right">
+          <img src="https://placehold.co/500x500/F7F8F6/1A6B45?text=Child+Learning" alt="Child with books" class="resources-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teachers Section -->
+  <section class="section section-alt teachers-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Meet Our Teachers</h2>
+      <div class="grid grid-5 teachers-grid">
+        <div class="teacher-card">
+          <img src="https://placehold.co/120x120/1A6B45/FFFFFF?text=KA" alt="Khalid Al-Faisal" class="teacher-photo">
+          <h4>Khalid Al-Faisal</h4>
+          <p class="text-green">Quran Recitation</p>
+        </div>
+        <div class="teacher-card">
+          <img src="https://placehold.co/120x120/1A6B45/FFFFFF?text=AM" alt="Ahmed Al-Mansour" class="teacher-photo">
+          <h4>Ahmed Al-Mansour</h4>
+          <p class="text-green">Learning Arabic</p>
+        </div>
+        <div class="teacher-card">
+          <img src="https://placehold.co/120x120/1A6B45/FFFFFF?text=SR" alt="Salman Al-Rashid" class="teacher-photo">
+          <h4>Salman Al-Rashid</h4>
+          <p class="text-green">Quranic Adventures</p>
+        </div>
+        <div class="teacher-card">
+          <img src="https://placehold.co/120x120/1A6B45/FFFFFF?text=FM" alt="Fahad Al-Mutairi" class="teacher-photo">
+          <h4>Fahad Al-Mutairi</h4>
+          <p class="text-green">Islamic Stories</p>
+        </div>
+        <div class="teacher-card">
+          <img src="https://placehold.co/120x120/1A6B45/FFFFFF?text=YH" alt="Yusuf Al-Hassan" class="teacher-photo">
+          <h4>Yusuf Al-Hassan</h4>
+          <p class="text-green">Islamic History</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Articles Section -->
+  <section class="section articles-section">
+    <div class="container">
+      <div class="articles-header">
+        <div>
+          <h2 class="mb-2">Latest Articles</h2>
+          <p class="text-muted">Read our latest insights on Islamic education and parenting</p>
+        </div>
+        <button class="btn btn-primary">Read All Articles</button>
+      </div>
+
+      <div class="articles-grid">
+        <div class="article-card article-featured">
+          <img src="https://placehold.co/600x360/1A6B45/FFFFFF?text=Featured+Article" alt="Article" class="article-image">
+          <div class="article-content">
+            <div class="article-badges">
+              <span class="badge badge-outline-green">Learn More</span>
+              <span class="article-date">March 5, 2026</span>
+            </div>
+            <h3>The Importance of Early Islamic Education</h3>
+            <p class="text-muted">Discover how early exposure to Islamic teachings shapes a child's character and provides a strong foundation for lifelong learning and spiritual growth.</p>
+          </div>
+        </div>
+
+        <div class="article-list">
+          <div class="article-small">
+            <img src="https://placehold.co/100x100/1A6B45/FFFFFF?text=Art" alt="Article">
+            <div class="article-small-content">
+              <div class="article-badges">
+                <span class="badge badge-outline-green">Read More</span>
+                <span class="article-date">March 3, 2026</span>
+              </div>
+              <h4>Teaching Quran to Young Children</h4>
+            </div>
+          </div>
+
+          <div class="article-small">
+            <img src="https://placehold.co/100x100/1A6B45/FFFFFF?text=Art" alt="Article">
+            <div class="article-small-content">
+              <div class="article-badges">
+                <span class="badge badge-outline-green">Learn More</span>
+                <span class="article-date">March 1, 2026</span>
+              </div>
+              <h4>Building Islamic Character in Kids</h4>
+            </div>
+          </div>
+
+          <div class="article-small">
+            <img src="https://placehold.co/100x100/1A6B45/FFFFFF?text=Art" alt="Article">
+            <div class="article-small-content">
+              <div class="article-badges">
+                <span class="badge badge-outline-green">Read More</span>
+                <span class="article-date">February 28, 2026</span>
+              </div>
+              <h4>The Role of Parents in Islamic Education</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-left">
+          <h2 class="mb-3">Our Address</h2>
+          <div class="contact-info">
+            <p><strong>Address:</strong><br>123 Islamic Center Road<br>Springfield, IL 62701<br>United States</p>
+            <p><strong>Email:</strong><br>info@ilmseeker.com<br>support@ilmseeker.com</p>
+            <p><strong>Phone:</strong><br>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+          </div>
+          <div class="contact-decoration">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" class="rainbow-arc">
+              <path d="M 20 80 Q 100 20 180 80" stroke="#F59E0B" stroke-width="6" fill="none"/>
+              <path d="M 20 85 Q 100 25 180 85" stroke="#10B981" stroke-width="6" fill="none"/>
+              <path d="M 20 90 Q 100 30 180 90" stroke="#3B82F6" stroke-width="6" fill="none"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form">
+            <div class="form-row">
+              <input type="text" placeholder="Guardian Name*" required>
+              <input type="tel" placeholder="Phone Number*" required>
+            </div>
+            <div class="form-row">
+              <input type="email" placeholder="Email*" required>
+              <input type="text" placeholder="Date Name*" required>
+            </div>
+            <div class="form-row">
+              <input type="date" placeholder="Birth Day*" required>
+              <input type="number" placeholder="Age of Child*" min="3" max="16" required>
+            </div>
+            <textarea placeholder="Message*" required></textarea>
+            <button type="submit" class="btn btn-primary" style="margin-left: auto;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <img src="https://placehold.co/150x50/FFFFFF/1A6B45?text=ILM+SEEKER" alt="ILM SEEKER" class="footer-logo">
+          <p class="footer-description">ILM SEEKER is dedicated to providing quality Islamic education for children, nurturing their spiritual growth and academic excellence.</p>
+          <div class="footer-socials">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </div>
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Ilm School</a></li>
+            <li><a href="#">About Ilm School</a></li>
+            <li><a href="#">Ilm Store</a></li>
+            <li><a href="#">Ilm Daycare</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get Help</h4>
+          <ul class="footer-links">
+            <li><a href="#">Support Careers</a></li>
+            <li><a href="#">24/7 Service</a></li>
+            <li><a href="#">Quick Chat</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Subscribe News</h4>
+          <div class="footer-subscribe">
+            <input type="email" placeholder="Your email">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+          <div class="footer-contact">
+            <p>📧 info@ilmseeker.com</p>
+            <p>📞 +1 (555) 123-4567</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>©IlmSeeker</span>
+          <span>|</span>
+          <span>Powered by Islamic Education Team</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

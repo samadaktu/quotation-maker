@@ -1,0 +1,48 @@
+.logo-section { margin-bottom: 0.5rem; }
+.logo-dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  background: var(--bg-secondary);
+}
+.logo-dropzone:hover, .logo-dropzone.dragging {
+  border-color: var(--accent);
+  background: rgba(59,130,246,0.04);
+  color: var(--accent);
+}
+.upload-icon { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+.upload-hint { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
+.logo-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+}
+.logo-preview img { height: 60px; max-width: 200px; object-fit: contain; }
+.logo-remove {
+  display: flex; align-items: center; gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background: var(--danger);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-left: auto;
+  min-height: 44px;
+}
+.logo-remove:hover { opacity: 0.85; }
+@media (max-width: 480px) {
+  .logo-preview {
+    flex-wrap: wrap;
+  }
+  .logo-preview img { max-width: 150px; }
+  .logo-remove { margin-left: 0; width: 100%; justify-content: center; }
+}

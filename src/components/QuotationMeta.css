@@ -1,0 +1,17 @@
+.input-with-action {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.input-with-action input { flex: 1; }
+.icon-btn {
+  width: 36px; height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+.icon-btn:hover { background: var(--accent); color: white; border-color: var(--accent); }

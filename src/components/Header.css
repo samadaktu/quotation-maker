@@ -1,0 +1,46 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--primary);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.header-brand { display: flex; align-items: center; gap: 0.75rem; }
+.header-logo {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.25rem;
+}
+.header-title { font-size: 1.25rem; font-weight: 700; color: white; line-height: 1.2; }
+.header-subtitle { font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+.header-toggle {
+  display: none;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+.toggle-btn {
+  padding: 0.375rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  background: transparent;
+  min-height: 44px;
+}
+.toggle-btn.active { background: white; color: var(--primary); }
+@media (max-width: 1024px) { .header-toggle { display: flex; } }
+@media (max-width: 480px) {
+  .header { padding: 0 1rem; }
+  .header-title { font-size: 1rem; }
+  .header-subtitle { display: none; }
+  .toggle-btn { padding: 0.375rem 0.75rem; font-size: 0.8125rem; }
+}
